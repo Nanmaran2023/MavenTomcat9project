@@ -29,15 +29,6 @@ pipeline {
 		}
 		
 	}
-	
-	stage('Notification'){
-		steps{
-		emailext(
-			subject: "Job Completed",
-			body: "Jenkins pipeline job for maven build job completed",
-			to: "devopseng129@gmail.com"
-		)
-		}
 	}
 	}
 }
